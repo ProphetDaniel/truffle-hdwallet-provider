@@ -11,6 +11,14 @@ $ npm install truffle-safe-hdwallet-provider
 
 You can use this provider wherever a Web3 provider is needed, not just in Truffle. For Truffle-specific usage, see next section.
 
+### HDWalletProvider Signature
+The following is the function signature of the HDWalletProvider fuction:
+```javascript
+function HDWalletProvider(mnemonic, provider_url, address_index=0, num_addresses=1, password='')
+```
+
+###Usage
+
 ```javascript
 var HDWalletProvider = require("truffle-safe-hdwallet-provider");
 var mnemonic = "opinion destroy betray ..."; // 12 word mnemonic
@@ -18,6 +26,13 @@ var provider = new HDWalletProvider(mnemonic, "http://localhost:8545");
 
 // Or, alternatively pass in a zero-based address index.
 var provider = new HDWalletProvider(mnemonic, "http://localhost:8545", 5);
+
+// Or, alternatively pass in also the ammount of addresses to list.
+var provider = new HDWalletProvider(mnemonic, "http://localhost:8545", 5, 1);
+
+// Or, alternatively pass in also the password that encoded the mnemonic phrase.
+var provider = new HDWalletProvider(mnemonic, "http://localhost:8545", 5, 1, 'a password');
+
 ```
 
 By default, the `HDWalletProvider` will use the address of the first address that's generated from the mnemonic. If you pass in a specific index, it'll use that address instead. Currently, the `HDWalletProvider` manages only one address at a time, but it can be easily upgraded to manage (i.e., "unlock") multiple addresses.
