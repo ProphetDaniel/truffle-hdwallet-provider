@@ -17,7 +17,7 @@ The following is the function signature of the HDWalletProvider fuction:
 function HDWalletProvider(mnemonic, provider_url, address_index=0, num_addresses=1, password='')
 ```
 
-###Usage
+### Usage
 
 ```javascript
 var HDWalletProvider = require("truffle-safe-hdwallet-provider");
