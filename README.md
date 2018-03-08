@@ -4,7 +4,7 @@ HD Wallet-enabled Web3 provider. Use it to sign transactions for addresses deriv
 ## Install
 
 ```
-$ npm install truffle-hdwallet-provider
+$ npm install truffle-safe-hdwallet-provider
 ```
 
 ## General Usage
@@ -12,7 +12,7 @@ $ npm install truffle-hdwallet-provider
 You can use this provider wherever a Web3 provider is needed, not just in Truffle. For Truffle-specific usage, see next section.
 
 ```javascript
-var HDWalletProvider = require("truffle-hdwallet-provider");
+var HDWalletProvider = require("truffle-safe-hdwallet-provider");
 var mnemonic = "opinion destroy betray ..."; // 12 word mnemonic
 var provider = new HDWalletProvider(mnemonic, "http://localhost:8545");
 
@@ -34,7 +34,7 @@ You can easily use this within a Truffle configuration. For instance:
 
 truffle.js
 ```javascript
-var HDWalletProvider = require("truffle-hdwallet-provider");
+var HDWalletProvider = require("truffle-safe-hdwallet-provider");
 
 var mnemonic = "opinion destroy betray ...";
 
