@@ -1,5 +1,5 @@
 {
-  "name": "truffle-hdwallet-provider",
+  "name": "truffle-safe-hdwallet-provider",
   "version": "0.0.4",
   "description": "HD Wallet-enabled Web3 provider",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trufflesuite/truffle-hdwallet-provider.git"
+    "url": "git+https://github.com/ProphetDaniel/truffle-safe-hdwallet-provider.git"
   },
   "keywords": [
     "etheruem",
@@ -17,12 +17,12 @@
     "mnemonic",
     "provider"
   ],
-  "author": "Tim Coulter <tim.coulter@consensys.net>",
+  "author": "Prophet Daniel <prophetdaniel@ethereumclassic.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/trufflesuite/truffle-hdwallet-provider/issues"
+    "url": "https://github.com/ProphetDaniel/truffle-safe-hdwallet-provider/issues"
   },
-  "homepage": "https://github.com/trufflesuite/truffle-hdwallet-provider#readme",
+  "homepage": "https://github.com/ProphetDaniel/truffle-safe-hdwallet-provider#readme",
   "dependencies": {
     "bip39": "^2.2.0",
     "ethereumjs-wallet": "^0.6.0",
